@@ -1,3 +1,7 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+#20220901 copyright BeeKnowledgeDesign
+
 from PIL import Image
 import numpy as np
 import open3d
