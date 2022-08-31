@@ -4,7 +4,6 @@ import open3d
 
 points = []
 colors = []
-normals = []
 
 rowimage=Image.open('logo.jpg')
 maxcol , maxrow = rowimage.size
@@ -27,7 +26,6 @@ for i in range(maxrow):
       points.append([ float(i),float(j), 0.0])
       colors.append([a,b,c])
 
-rgb_t = np.transpose(colors)
 pcd.points = open3d.utility.Vector3dVector(points)
 pcd.colors = open3d.utility.Vector3dVector(colors)
 
