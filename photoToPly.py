@@ -34,7 +34,7 @@ pcd.colors = open3d.utility.Vector3dVector(colors)
 downpcd = pcd.uniform_down_sample(every_k_points=5)
 
 print(im.size)
-# ランダムに打った点を可視化
+
 open3d.visualization.draw_geometries(
   [downpcd],
   width=1000,
